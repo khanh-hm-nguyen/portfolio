@@ -1,6 +1,6 @@
 export const portfolioData = {
   personal: {
-    name: "Your Name",
+    name: "Khanh Nguyen",
     title: "Java Backend Developer",
     subtitle: "with Full Stack Vision",
     email: "your.email@gmail.com",
