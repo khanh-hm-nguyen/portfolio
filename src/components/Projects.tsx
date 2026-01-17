@@ -12,6 +12,7 @@ import {
 } from "@mui/icons-material";
 import { portfolioData } from "@/data/portfolio";
 import Link from "next/link";
+import Image from "next/image";
 import { projectThemes } from "@/data/theme";
 import { useSelector } from "react-redux";
 import { RootState } from "@/lib/store";
@@ -24,6 +25,7 @@ interface Deployment {
 
 interface Project {
   title: string;
+  image?: string;
   description: string;
   category: string;
   tags: string[];
@@ -31,7 +33,6 @@ interface Project {
   demoLink?: string;
   deployment?: Deployment;
 }
-
 const Projects = () => {
   const lang = useSelector((state: RootState) => state.language.current);
 
@@ -91,18 +92,34 @@ const Projects = () => {
                   <div
                     className={`absolute inset-0 bg-gradient-to-br ${theme.gradient} opacity-10 dark:opacity-20 group-hover:opacity-20 dark:group-hover:opacity-30 transition-opacity duration-500`}
                   />
-                  <div className="absolute inset-0 opacity-[0.03] dark:opacity-[0.05] bg-[radial-gradient(#000_1px,transparent_1px)] dark:bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:16px_16px]" />
-                  <div
-                    className={`relative z-10 p-8 rounded-2xl bg-white dark:bg-slate-900 shadow-xl ring-1 ring-slate-900/5 dark:ring-white/10 transform transition-all duration-500 group-hover:scale-110 group-hover:rotate-3`}
-                  >
-                    {isJava ? (
-                      <Storage className={`!text-6xl ${theme.text}`} />
-                    ) : project.category.includes("Front") ? (
-                      <Web className={`!text-6xl ${theme.text}`} />
-                    ) : (
-                      <Code className={`!text-6xl ${theme.text}`} />
-                    )}
-                  </div>
+
+                  {/* Logic to show Image or Icon */}
+                  {project.image ? (
+                    <div className="relative w-full h-full p-4 lg:p-6 transition-transform duration-500 group-hover:scale-105">
+                      <Image
+                        src={project.image}
+                        alt={project.title}
+                        width={800}
+                        height={800}
+                        className="w-full h-full object-cover rounded-2xl shadow-2xl border border-white/10"
+                      />
+                    </div>
+                  ) : (
+                    <>
+                      <div className="absolute inset-0 opacity-[0.03] dark:opacity-[0.05] bg-[radial-gradient(#000_1px,transparent_1px)] dark:bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:16px_16px]" />
+                      <div
+                        className={`relative z-10 p-8 rounded-2xl bg-white dark:bg-slate-900 shadow-xl ring-1 ring-slate-900/5 dark:ring-white/10 transform transition-all duration-500 group-hover:scale-110 group-hover:rotate-3`}
+                      >
+                        {isJava ? (
+                          <Storage className={`!text-6xl ${theme.text}`} />
+                        ) : project.category.includes("Front") ? (
+                          <Web className={`!text-6xl ${theme.text}`} />
+                        ) : (
+                          <Code className={`!text-6xl ${theme.text}`} />
+                        )}
+                      </div>
+                    </>
+                  )}
                 </div>
 
                 <div className="flex-1 p-8 md:p-10 flex flex-col relative z-10">

@@ -2,15 +2,14 @@ export const portfolioData = {
   en: {
     personal: {
       name: "Khanh Nguyen",
-      birthYear: 2003,
       title: "Java Full-Stack Developer",
       subtitle: "Cloud-Native Solutions",
       availability: "Available for Full-time",
       githubUrl: "https://github.com/khanh-hm-nguyen",
       linkedinUrl: "#",
-      email: "your.email@example.com",
+      email: "khanh.hm.nguyen03@gmail.com",
       summary:
-        "Born in 2003, I began my global journey at 16, moving to Canada to pursue my education. After graduating from SAIT in 2023, I navigated a period of personal growth and resilience. Today, I am back with a deeper passion for coding, combining my strong Java foundation with the cutting-edge capabilities of Next.js 16 to build high-performance, full-stack applications.",
+        "Java Full-Stack Developer focused on building secure, scalable systems. I specialize in bridging robust Java backends with the elite performance of Next.js to create seamless, SEO-optimized user experiences.",
     },
     hero: {
       btnProject: "View My Projects",
@@ -25,6 +24,7 @@ export const portfolioData = {
         items: [
           "Java 21",
           "Spring Boot 3",
+          "Spring Secruity 6",
           "OOP Principles",
           "JWT Security",
           "Hibernate/JPA",
@@ -43,14 +43,14 @@ export const portfolioData = {
         ],
       },
       {
-        category: "Frontend Ecosystem",
+        category: "Frontend & Tools",
         icon: "Layers",
         items: [
           "Next.js 16",
-          "React.js",
           "TypeScript",
           "Tailwind CSS",
           "Zustand/Redux",
+          "Git / GitHub",
           "Responsive Design",
         ],
       },
@@ -58,6 +58,7 @@ export const portfolioData = {
     projects: [
       {
         title: "TaskFlow Full-Stack",
+        image: "/projects/taskflow.png",
         description:
           "A production-grade task manager. I applied OOP Design Patterns in the Java backend to handle business logic and used JWT for secure, stateless authentication.",
         deployment: {
@@ -67,12 +68,13 @@ export const portfolioData = {
         },
         tags: ["Spring Boot 3", "Next.js 16", "PostgreSQL", "Docker", "JWT"],
         repoLink: "https://github.com/khanh-hm-nguyen/task-flow",
-        demoLink: "https://task-flow-frontend.vercel.app",
+        demoLink: "https://task-flow-vert-kappa.vercel.app",
         featured: true,
         category: "Full Stack",
       },
       {
         title: "EventHub Command Center",
+        image: "/projects/eventhub.png",
         description:
           "A high-performance event discovery platform using a Hybrid Architecture. I implemented secure JWT-based Authentication and Role-Based Access Control (RBAC) via a custom Next.js 16 Proxy. Leveraged Server Actions for SEO-optimized data fetching and RESTful API routes for secure mutations (POST/PUT/DELETE).",
         deployment: {
@@ -90,7 +92,7 @@ export const portfolioData = {
           "SEO",
         ],
         repoLink: "https://github.com/khanh-hm-nguyen/event-hub",
-        demoLink: "event-hub-phi-ten.vercel.app",
+        demoLink: "https://event-hub-phi-ten.vercel.app/",
         featured: true,
         category: "Full Stack",
       },
@@ -131,25 +133,28 @@ export const portfolioData = {
         items: [
           "Java 21",
           "Spring Boot 3",
-          "Nguyên lý OOP",
-          "Bảo mật JWT",
+          "Spring Secruity 6",
+          "OOP Principles",
+          "JWT Security",
           "Hibernate/JPA",
           "Maven",
         ],
       },
       {
-        category: "Cơ sở dữ liệu & Cloud",
+        category: "Databases & Cloud",
         icon: "Cloud",
         items: [
-          "PostgreSQL (Neon)",
+          "PostgreSQL",
           "MongoDB",
           "Docker",
           "REST APIs",
-          "Render/Vercel",
+          "Vercel",
+          "Render",
+          "Neon",
         ],
       },
       {
-        category: "Hệ sinh thái Frontend",
+        category: "Frontend & Tools",
         icon: "Layers",
         items: [
           "Next.js 16",
@@ -157,6 +162,7 @@ export const portfolioData = {
           "TypeScript",
           "Tailwind CSS",
           "Zustand/Redux",
+          "Git / GitHub",
           "Responsive Design",
         ],
       },
@@ -164,6 +170,7 @@ export const portfolioData = {
     projects: [
       {
         title: "TaskFlow Full-Stack",
+        image: "/projects/taskflow.png",
         description:
           "Trình quản lý tác vụ cấp sản xuất. Mình đã áp dụng các Mẫu thiết kế OOP trong backend Java để xử lý nghiệp vụ và sử dụng JWT để xác thực bảo mật, không trạng thái.",
         deployment: {
@@ -173,12 +180,13 @@ export const portfolioData = {
         },
         tags: ["Spring Boot 3", "Next.js 16", "PostgreSQL", "Docker", "JWT"],
         repoLink: "https://github.com/khanh-hm-nguyen/task-flow",
-        demoLink: "https://task-flow-frontend.vercel.app",
+        demoLink: "https://task-flow-vert-kappa.vercel.app/",
         featured: true,
         category: "Full Stack",
       },
       {
         title: "EventHub Command Center",
+        image: "/projects/eventhub.png",
         description:
           "Nền tảng khám phá sự kiện hiệu suất cao với Kiến trúc Hybrid. Mình đã triển khai Xác thực & Phân quyền bảo mật bằng JWT và RBAC thông qua hệ thống Proxy tùy chỉnh trên Next.js 16. Sử dụng Server Actions để tối ưu SEO và RESTful API cho các tác vụ thay đổi dữ liệu (POST/PUT/DELETE).",
         deployment: {
@@ -195,7 +203,7 @@ export const portfolioData = {
           "Tối ưu SEO",
         ],
         repoLink: "https://github.com/khanh-hm-nguyen/event-hub",
-        demoLink: "event-hub-phi-ten.vercel.app",
+        demoLink: "https://event-hub-phi-ten.vercel.app",
         featured: true,
         category: "Full Stack",
       },
