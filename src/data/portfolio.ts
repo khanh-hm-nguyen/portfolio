@@ -71,6 +71,29 @@ export const portfolioData = {
         featured: true,
         category: "Full Stack",
       },
+      {
+        title: "EventHub Command Center",
+        description:
+          "A high-performance event discovery platform using a Hybrid Architecture. I implemented secure JWT-based Authentication and Role-Based Access Control (RBAC) via a custom Next.js 16 Proxy. Leveraged Server Actions for SEO-optimized data fetching and RESTful API routes for secure mutations (POST/PUT/DELETE).",
+        deployment: {
+          frontend: "Vercel (Next.js 16 Runtime)",
+          backend: "Hybrid (Server Actions + REST API)",
+          database: "MongoDB Atlas",
+        },
+
+        tags: [
+          "Next.js 16",
+          "JWT Auth",
+          "RBAC",
+          "Hybrid Architecture",
+          "Cloudinary",
+          "SEO",
+        ],
+        repoLink: "https://github.com/khanh-hm-nguyen/event-hub",
+        demoLink: "event-hub-phi-ten.vercel.app",
+        featured: true,
+        category: "Full Stack",
+      },
     ],
 
     footer: {
@@ -151,6 +174,28 @@ export const portfolioData = {
         tags: ["Spring Boot 3", "Next.js 16", "PostgreSQL", "Docker", "JWT"],
         repoLink: "https://github.com/khanh-hm-nguyen/task-flow",
         demoLink: "https://task-flow-frontend.vercel.app",
+        featured: true,
+        category: "Full Stack",
+      },
+      {
+        title: "EventHub Command Center",
+        description:
+          "Nền tảng khám phá sự kiện hiệu suất cao với Kiến trúc Hybrid. Mình đã triển khai Xác thực & Phân quyền bảo mật bằng JWT và RBAC thông qua hệ thống Proxy tùy chỉnh trên Next.js 16. Sử dụng Server Actions để tối ưu SEO và RESTful API cho các tác vụ thay đổi dữ liệu (POST/PUT/DELETE).",
+        deployment: {
+          frontend: "Vercel (Next.js 16 Runtime)",
+          backend: "Hybrid (Server Actions + REST API)",
+          database: "MongoDB Atlas",
+        },
+        tags: [
+          "Next.js 16",
+          "JWT Auth",
+          "RBAC",
+          "Kiến trúc Hybrid",
+          "Cloudinary",
+          "Tối ưu SEO",
+        ],
+        repoLink: "https://github.com/khanh-hm-nguyen/event-hub",
+        demoLink: "event-hub-phi-ten.vercel.app",
         featured: true,
         category: "Full Stack",
       },
