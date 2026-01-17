@@ -37,19 +37,6 @@ const Footer = () => {
             <span className="font-semibold">{footer.emailBtn}</span>
           </a>
 
-          {/* LinkedIn Button */}
-          <a
-            href={personal.linkedinUrl}
-            target="_blank"
-            rel="noreferrer"
-            className="group flex items-center gap-3 px-6 py-3.5 rounded-xl transition-all duration-300 shadow-sm hover:shadow-md hover:-translate-y-1 bg-white border border-slate-200 text-slate-700 hover:border-blue-600 hover:text-blue-600 dark:bg-slate-900 dark:border-slate-800 dark:text-slate-300 dark:hover:border-blue-500 dark:hover:text-blue-400"
-          >
-            <div className="p-2 rounded-lg transition-colors bg-blue-50 text-blue-600 dark:bg-blue-900/30 dark:text-blue-400 group-hover:bg-blue-600 group-hover:text-white">
-              <LinkedIn fontSize="small" />
-            </div>
-            <span className="font-semibold">{footer.linkedinBtn}</span>
-          </a>
-
           {/* GitHub Button */}
           <a
             href={personal.githubUrl}

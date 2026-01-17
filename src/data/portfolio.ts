@@ -23,7 +23,7 @@ export const portfolioData = {
         icon: "Storage",
         items: [
           "Java 21",
-          "Spring Boot 3",
+          "Spring Boot 4",
           "Spring Secruity 6",
           "OOP Principles",
           "JWT Security",
@@ -37,6 +37,7 @@ export const portfolioData = {
         items: [
           "PostgreSQL (Neon)",
           "MongoDB",
+          "Cloudinary",
           "Docker",
           "REST APIs",
           "Render/Vercel",
@@ -66,7 +67,7 @@ export const portfolioData = {
           backend: "Render (Dockerized Spring Boot)",
           database: "Neon (Serverless PostgreSQL)",
         },
-        tags: ["Spring Boot 3", "Next.js 16", "PostgreSQL", "Docker", "JWT"],
+        tags: ["Spring Boot 4", "Next.js 16", "PostgreSQL", "Docker", "JWT"],
         repoLink: "https://github.com/khanh-hm-nguyen/task-flow",
         demoLink: "https://task-flow-vert-kappa.vercel.app",
         featured: true,
@@ -110,15 +111,14 @@ export const portfolioData = {
   vi: {
     personal: {
       name: "Khánh Nguyễn",
-      birthYear: 2003,
       title: "Lập trình viên Java Full-Stack",
       subtitle: "Giải pháp Cloud-Native",
-      availability: "Sẵn sàng làm việc Full-time",
+      availability: "Sẵn sàng làm việc toàn thời gian",
       githubUrl: "https://github.com/khanh-hm-nguyen",
-      linkedinUrl: "",
-      email: "your.email@example.com",
+      linkedinUrl: "#",
+      email: "khanh.hm.nguyen03@gmail.com",
       summary:
-        "Sinh năm 2003, mình bắt đầu hành trình quốc tế từ năm 16 tuổi khi chuyển đến Canada. Sau khi tốt nghiệp SAIT năm 2023, mình đã trải qua giai đoạn phát triển cá nhân. Hôm nay, mình trở lại với niềm đam mê mãnh liệt hơn, kết hợp nền tảng Java vững chắc với khả năng của Next.js 16 để xây dựng các ứng dụng hiệu suất cao.",
+        "Lập trình viên Java Full-Stack chuyên xây dựng các hệ thống bảo mật và có khả năng mở rộng cao. Thế mạnh của tôi là kết hợp hệ thống backend Java mạnh mẽ với hiệu suất vượt trội của Next.js để tạo ra những trải nghiệm người dùng mượt mà và tối ưu SEO.",
     },
     hero: {
       btnProject: "Xem Dự án",
@@ -132,7 +132,7 @@ export const portfolioData = {
         icon: "Storage",
         items: [
           "Java 21",
-          "Spring Boot 3",
+          "Spring Boot 4",
           "Spring Secruity 6",
           "OOP Principles",
           "JWT Security",
@@ -172,13 +172,13 @@ export const portfolioData = {
         title: "TaskFlow Full-Stack",
         image: "/projects/taskflow.png",
         description:
-          "Trình quản lý tác vụ cấp sản xuất. Mình đã áp dụng các Mẫu thiết kế OOP trong backend Java để xử lý nghiệp vụ và sử dụng JWT để xác thực bảo mật, không trạng thái.",
+          "Trình quản lý tác vụ cấp sản xuất. Mình đã áp dụng OOP Design Patterns trong backend Java để xử lý nghiệp vụ và sử dụng JWT để xác thực bảo mật, không trạng thái.",
         deployment: {
           frontend: "Vercel (Edge Network)",
           backend: "Render (Dockerized Spring Boot)",
           database: "Neon (Serverless PostgreSQL)",
         },
-        tags: ["Spring Boot 3", "Next.js 16", "PostgreSQL", "Docker", "JWT"],
+        tags: ["Spring Boot 4", "Next.js 16", "PostgreSQL", "Docker", "JWT"],
         repoLink: "https://github.com/khanh-hm-nguyen/task-flow",
         demoLink: "https://task-flow-vert-kappa.vercel.app/",
         featured: true,
