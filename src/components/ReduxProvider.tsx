@@ -1,10 +1,9 @@
 "use client";
 
-import { Provider, useSelector, useDispatch } from "react-redux";
+import { Provider, useSelector } from "react-redux";
 import { useEffect } from "react";
-
-import { store, RootState } from "@/lib/store";
-
+import { PersistGate } from "redux-persist/integration/react";
+import { store, persistor, RootState } from "@/lib/store";
 
 const ThemeHandler = ({ children }: { children: React.ReactNode }) => {
   const isDarkMode = useSelector((state: RootState) => state.theme.isDarkMode);
@@ -23,7 +22,9 @@ const ThemeHandler = ({ children }: { children: React.ReactNode }) => {
 export function ReduxProvider({ children }: { children: React.ReactNode }) {
   return (
     <Provider store={store}>
-      <ThemeHandler>{children}</ThemeHandler>
+      <PersistGate loading={null} persistor={persistor}>
+        <ThemeHandler>{children}</ThemeHandler>
+      </PersistGate>
     </Provider>
   );
 }
